@@ -53,6 +53,6 @@ if __name__ == "__main__":
     ll.append(1)
     ll.append(2)
     ll.append(3)
-    #ll.prepend(0)
-    #ll.delete_node(2)
+    ll.prepend(0)
+    ll.delete_node(2)
     ll.print_list()
