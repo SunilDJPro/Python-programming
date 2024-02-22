@@ -28,7 +28,7 @@ if __name__ == "__main__":
     stack.push(4)
     stack.push(7)
     #print(stack.peek())  
-    print(stack.pop())  
+    print(f"Popped: {stack.pop()}")  
     #print(stack.size())  
     print(stack.peek())
     print(stack.size())
