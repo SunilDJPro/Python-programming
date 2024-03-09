@@ -4,6 +4,13 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
+        #    5
+        #  2   6
+    #    1  3 4 7
+
+
+
 class BinarySearchTree:
     def __init__(self):
         self.root = None
@@ -25,7 +32,7 @@ class BinarySearchTree:
                 node.right = TreeNode(value)
             else:
                 self._insert_recursive(node.right, value)
-        # Ignore duplicates (values already exist in the tree)
+        #Ignore duplicates (values already exist in the tree)
 
     def inorder_traversal(self):
         def _inorder_traversal_recursive(node):
@@ -36,12 +43,14 @@ class BinarySearchTree:
 
         _inorder_traversal_recursive(self.root)
 
-# Example usage:
+
+
 if __name__ == "__main__":
     bst = BinarySearchTree()
     bst.insert(550)
     bst.insert(380)
     bst.insert(720)
+    bst.insert(550)
     bst.insert(205)
     bst.insert(470)
     bst.insert(640)
@@ -49,3 +58,4 @@ if __name__ == "__main__":
 
     print("In-order traversal:")
     bst.inorder_traversal()
+ 
